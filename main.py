@@ -1,5 +1,4 @@
 import streamlit as st
-import pandas as pd
 from joblib import load
 from db_helper import text_processing
 
@@ -36,7 +35,7 @@ if all(col in df.columns for col in required_columns):
     # Prepare options for dropdown: combine 'classify' and 'text' into a single string
     options = [f"{row['classify']} - Text: {row['text']}" for _, row in df.iterrows()]
 
-    # Use Streamlit selectbox for dropdown
+    # Use Streamlit select box for dropdown
     selected_option = st.selectbox("Reference some options of spam or no spam below:", options)
 
     # Find the selected row using the index of the selected_option
