@@ -4,6 +4,9 @@ from nltk.stem import PorterStemmer
 from nltk.tokenize import word_tokenize
 import string
 from joblib import load
+import nltk
+nltk.download('stopwords')
+nltk.download('punkt')
 
 best_model = load("artifact/best_model.joblib")
 vectorizer = load("artifact/vectorizer.joblib")
