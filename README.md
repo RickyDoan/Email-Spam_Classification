@@ -1,6 +1,6 @@
 # Email Spam Classification with Machine Learning
-* url : https://ricky-email-spam-classification.streamlit.app/
-This project demonstrates how to build a machine learning model for classifying emails as spam or not spam. The model is trained using natural language processing (NLP) techniques and machine learning algorithms to identify spam emails accurately.
+* Play with app : https://ricky-email-spam-classification.streamlit.app/
+* This project demonstrates how to build a machine learning model for classifying emails as spam or not spam. The model is trained using natural language processing (NLP) techniques and machine learning algorithms to identify spam emails accurately.
 
 ### Libraries Used
 * Stopwords: For removing common words that don't add much meaning to the text (e.g., "and", "the").
@@ -24,6 +24,7 @@ Model Training:
 * Evaluated the model's performance using precision, recall, and accuracy metrics:
 * The accuracy is 96% with 100% recall for kaggle datasets.
 * According to real world spam, the accuracy is around 70% because the data was trained from my datasets has still not updated, so that some new kind of spam email was not detected.
+* Datasets from kaggle : https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset
 ### Results
 The model can effectively classify emails as spam or not, with a focus on minimizing false negatives.
 The use of CountVectorizer and TfidfVectorizer significantly improved the model's performance.
